@@ -1,0 +1,156 @@
+:root {
+    --primary-orange: #F5841F;
+    --primary-blue: #16213C;
+    --lightblue-background: rgba(143,203,231,0.2);
+    --white: #ffff  ;
+    --gray: #D9D9D9;
+    --page:rgba(181, 181, 181, 0.199) ;
+    --lightblue-text: #8ECAE6;
+}
+
+@font-face {
+    font-family: HansenGrotesk;
+    src: url(../font/HankenGrotesk-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+html {
+    font-family: HansenGrotesk;
+    font-weight: 400;
+}
+
+h1{
+    padding: 1em 0;
+    line-height: 1.5;
+}
+
+p{
+    line-height: 1.5;
+}
+
+figure{
+    margin: 0;
+
+}
+[class*="cta"],h1,h2 {
+    text-align: center;
+}
+.colored {
+    color: var(--primary-orange)
+}
+
+.bolder {
+    font-weight: 700;
+}
+
+.button {
+    text-align: center;
+    background-color: var(--primary-orange);
+    padding: 1em;
+    width: 90%;
+    border-radius: 1.5em;
+    display: inline-block;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.main_header {
+    padding: 2em 3em;
+    position: relative;
+}
+
+.smallnavbar {
+    background-color: #F5F5F5;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.smallnavbar__item {
+    color: black;
+    font-weight: bold;
+    font-size: 0.7em;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.smallnavbar__item-first::before {
+    content: url(../images/icons/phone.svg);
+    margin-right: 4px;
+}
+.smallnavbar__item-second::before {
+    content: url(../images/icons/mail.svg);
+    margin-right: 4px;
+}
+.smallnavbar__item-third::before {
+    content: url(../images/icons/user.svg);
+    margin-right: 4px;
+}
+
+.header__mainmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.mainmenu__list.active {
+    display: block;
+}
+
+.mainmenu__list {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-orange);
+    margin: 0;
+    top: 3em;
+    left: -1em;
+    right: -1em;
+    padding: 1.5em 0;
+    list-style-type: none;
+    text-align: center;
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 2em;
+     
+}
+
+.caption__list {
+    margin: 2em 0;
+    padding: 17px;
+}
+
+.caption__list li::marker {
+    content: url(../images/icons/mark.svg);
+}
+.caption__list li {
+    padding-left: 5px;
+    padding-bottom: 3px;
+}
+
+.header__info {
+    margin: 0;
+}
+
+.info__cta {
+    margin-bottom: 3em;
+}
+
+.info__img {
+    display: none;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logos img {
+    margin: 0.5em 1em;
+}
