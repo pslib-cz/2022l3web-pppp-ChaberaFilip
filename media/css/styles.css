@@ -120,7 +120,8 @@ hr{
     list-style-type: none;
     text-align: center;
     font-weight: 600;
-    border-radius: 2em;    
+    border-radius: 2em;
+    z-index: -5;
 }
 
 .mainmenu__list li a {
@@ -587,7 +588,7 @@ hr{
         height: 41px;
         right: 0;
         left: auto; 
-        display: flex;
+        display: flex; 
         align-items: center;
         background-color: var(--white);
         gap: 20px;
